@@ -1,0 +1,122 @@
+/* Fonte e base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Cabeçalho */
+header {
+  background: #020024;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 74%, rgba(25, 72, 158, 1) 100%);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header .logo {
+  max-width: 260px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  margin: 0 1rem;
+  color: #cbd5e1;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Seções */
+main section {
+  background-color: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+main section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Lista de serviços */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li::before {
+  content: "✅";
+  margin-right: 0.5rem;
+  color: green;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem;
+}
+
+#servicos {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.servico {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.servico h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #1e3a8a;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1); /* aumenta 10% */
+}
