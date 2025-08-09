@@ -122,26 +122,21 @@ footer {
 }
 
 /* Icons */
-#contato a {
-  text-decoration: none;
-  color: inherit;
+.icon-whatsapp {
+  color: #25D366; /* verde WhatsApp */
+}
+
+.icon-email {
+  color: #0072C6; /* azul email */
+}
+
+.icon-instagram {
+  color: #E1306C; /* rosa Instagram */
 }
 
 #contato i {
   margin-right: 8px;
-  font-size: 1.2em;
-  color: #25D366; /* Cor inicial para WhatsApp, pode mudar por tipo */
+  font-size: 1.4em;
 }
 
-#contato a[href*="instagram"] i {
-  color: #E1306C;
-}
-
-#contato a[href*="mailto"] i {
-  color: #0072C6;
-}
-
-#contato a:hover {
-  opacity: 0.8;
-}
 
