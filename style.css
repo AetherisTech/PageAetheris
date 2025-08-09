@@ -120,3 +120,28 @@ footer {
 .zoom-image:hover {
   transform: scale(1.1); /* aumenta 10% */
 }
+
+/* Icons */
+#contato a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#contato i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  color: #25D366; /* Cor inicial para WhatsApp, pode mudar por tipo */
+}
+
+#contato a[href*="instagram"] i {
+  color: #E1306C;
+}
+
+#contato a[href*="mailto"] i {
+  color: #0072C6;
+}
+
+#contato a:hover {
+  opacity: 0.8;
+}
+
